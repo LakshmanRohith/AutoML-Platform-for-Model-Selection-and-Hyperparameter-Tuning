@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lakshman/Downloads/automl/mlruns/0/354122b11bb148d099c294e7b2624ce0/artifacts
+end_time: 1751939899278
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 354122b11bb148d099c294e7b2624ce0
+run_name: XGBoost
+run_uuid: 354122b11bb148d099c294e7b2624ce0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751939889627
+status: 3
+tags: []
+user_id: Lakshman

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lakshman/Downloads/automl/mlruns/0/4050d00beb9d41608e30a5be67dd3a01/artifacts
+end_time: 1751890293806
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4050d00beb9d41608e30a5be67dd3a01
+run_name: DNN
+run_uuid: 4050d00beb9d41608e30a5be67dd3a01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751890151104
+status: 3
+tags: []
+user_id: Lakshman

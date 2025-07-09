@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Lakshman/Downloads/automl/mlruns/0/015bc4f018f7441f9a1b2c46d393efa7/artifacts
+end_time: 1751940593604
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 015bc4f018f7441f9a1b2c46d393efa7
+run_name: SVM
+run_uuid: 015bc4f018f7441f9a1b2c46d393efa7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751940593487
+status: 3
+tags: []
+user_id: Lakshman
