@@ -1,71 +1,52 @@
-AutoML Platform for Model Selection and Hyperparameter Tuning
+# 🚀 AutoML Platform for Model Selection and Hyperparameter Tuning
 
-Overview
+An end-to-end, no-code AutoML web application for automating the ML workflow—from **data preprocessing**, **model selection** (SVM, XGBoost, DNN), to **hyperparameter tuning** using **Grid Search**, **Optuna**, and **Bayesian Optimization**.
 
-This project is a web-based AutoML platform that allows users to upload a dataset, preprocess it, train machine learning models (SVM, XGBoost, DNN), tune hyperparameters, and track experiments using MLflow. The frontend is built with Streamlit.
+---
 
-Installation
+## 📌 Features
 
-Clone the repository:
+- ✅ Automated Data Preprocessing (scaling, encoding, imputation, outlier removal)
+- ✅ Model Selection: SVM, XGBoost, Deep Neural Networks (via PyCaret)
+- ✅ Hyperparameter Tuning with:
+  - Grid Search
+  - Optuna (Bayesian Optimization)
+  - Random Search
+- ✅ Visual performance comparison: Accuracy, F1-Score, ROC-AUC
+- ✅ Track experiments with MLflow
+- ✅ Interactive UI built using Streamlit
+- ✅ Export trained models and tuning reports
 
-git clone <repository_url>
-cd automl-platform
+---
 
-Create and activate a virtual environment:
+## 🛠️ Tech Stack
 
-python -m venv automl_env
-source automl_env/bin/activate # On Windows: automl_env\Scripts\activate
+| Component        | Technology Used               |
+|------------------|-------------------------------|
+| Backend / ML     | PyCaret, Optuna, Scikit-Learn |
+| UI               | Streamlit                     |
+| Experiment Logs  | MLflow                        |
+| Model Export     | joblib, pickle                |
+| Optimization     | Optuna, GridSearchCV          |
 
-Install dependencies:
+---
 
-pip install -r requirements.txt
+## 📂 Project Structure
 
-Running the Application
-
-Start the MLflow server:
-
-mlflow ui --backend-store-uri sqlite:///mlflow.db
-
-Run the Streamlit app:
-
-streamlit run app.py
-
-Open your browser and go to http://localhost:8501.
-
-Usage
-
-Upload a CSV dataset.
-
-Select the target column, task type (Classification/Regression), models, tuning method, and evaluation metrics.
-
-Click "Run AutoML" to preprocess, train, and evaluate models.
-
-View results, download the best model, and export a PDF report.
-
-Project Structure
-
-app.py: Main Streamlit app interface.
-
-config.yaml: Configuration for tuning and preprocessing.
-
-models/: Contains training logic for SVM, XGBoost, DNN.
-
-tuning/: Contains hyperparameter tuning logic.
-
-utils/: Contains preprocessing, evaluation, and MLflow tracking functions.
-
-artifacts/: Stores saved models and plots.
-
-requirements.txt: Lists required packages.
-
-README.md: Project documentation.
-
-Future Scope
-
-Add time-series model support.
-
-Integrate cloud storage (S3, GCP).
-
-Deploy with Docker.
-
-Add XAI support (LIME, SHAP).
+```bash
+📁 automl-platform/
+│
+├── app.py                  # Main Streamlit app
+├── requirements.txt        # Python dependencies
+├── README.md               # Project overview
+│
+├── 📁 modules/              # Custom Python scripts
+│   ├── data_handler.py     # Data loading & preprocessing
+│   ├── model_selector.py   # PyCaret model setup
+│   ├── tuner.py            # Grid/Optuna/BO tuner functions
+│   ├── mlflow_utils.py     # MLflow integration
+│
+├── 📁 artifacts/
+│   └── best_model.pkl      # Exported model (example)
+├── 📁 logs/                # MLflow tracking directory
+└── 📁 datasets/            # Sample CSV datasets
